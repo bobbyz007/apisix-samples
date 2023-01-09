@@ -13,6 +13,7 @@ docker compose -p docker-apisix up -d
 # 启动或停止
 docker compose -p docker-apisix start
 docker compose -p docker-apisix stop
+docker compose -p docker-apisix restart
 ```
 
 2. 创建本地测试http服务
