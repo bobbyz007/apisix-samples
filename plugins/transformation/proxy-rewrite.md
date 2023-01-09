@@ -1,4 +1,4 @@
-1. 激活 response-rewrite 插件并重启apisix
+1. 激活 proxy-rewrite 插件并重启apisix
 ```shell
 justin@KLVC-WXX9:~/workspace/apisix/apisix-docker/example$ vi apisix_conf/config.yaml 
 
@@ -45,7 +45,7 @@ curl http://127.0.0.1:9180/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f034335f1
 }'
 ```
 
-3. 访问验证： 发出批量请求
+3. 访问验证
 ```shell
 curl -X GET http://127.0.0.1:9080/anything/test?a=b
 ```

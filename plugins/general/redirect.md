@@ -31,7 +31,7 @@ curl http://127.0.0.1:9180/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f034335f1
 }'
 ```
 
-3. 访问验证： 发出批量请求
+3. 访问验证
 ```shell
 curl http://127.0.0.1:9080/test/index.html -i
 ```
