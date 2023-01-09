@@ -14,10 +14,12 @@ docker compose -p docker-apisix up -d
 docker compose -p docker-apisix start
 docker compose -p docker-apisix stop
 ```
+
 2. 创建本地测试http服务
 ```shell
 docker run -p 1980:80 kennethreitz/httpbin
 ```
+
 3. 查找apisix docker网桥ip，以访问外部宿主机的http服务，本例为 172.18.0.1:1980 
 ```shell
 # 查询docker网桥列表
