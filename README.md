@@ -18,9 +18,12 @@ docker compose -p docker-apisix restart
 
 2. 创建本地测试http服务: based on httpbin or http-https-echo
 ```shell
+# start multiple services
 docker run --rm -p 1980:80 kennethreitz/httpbin
+docker run --rm -p 1981:80 kennethreitz/httpbin
 
-# start http echo service: listen on http 1990
+
+# start http echo service: listen on http 1990, 1991, 1992 etc.
 # see https://github.com/mendhak/docker-http-https-echo
 docker run -p 1990:8080 -p 18443:8443 --rm -t mendhak/http-https-echo:28
 docker run -p 1991:8080 -p 18444:8443 --rm -t mendhak/http-https-echo:28
